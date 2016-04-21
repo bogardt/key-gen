@@ -18,7 +18,7 @@ def     usage():
 
 def     keyGen():
     while True :
-        try:
+        try:s
             res = ''.join(random.sample(char_set, int(key_len)))
             print (res)
         except (KeyboardInterrupt):
