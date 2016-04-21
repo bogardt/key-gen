@@ -1,11 +1,15 @@
 #!/usr/bin/env python
 # by bogard_t
 
-usage_msg = "usage : ./deletedup.py <outfile> <infile>"
+import sys
+
+usage_msg = "usage : ./deletedup.py <infile> <outfile>"
 
 try:
     if len(sys.argv) == 3:
         lines_seen = set()
+        infilename = sys.argv[1]
+        outfilename = sys.argv[2]
         outfile = open(outfilename, "w")
         for line in open(infilename, "r"):
             if line not in lines_seen:
