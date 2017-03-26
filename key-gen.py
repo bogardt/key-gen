@@ -32,7 +32,7 @@ try:
     if args:
         for arg in args:
             if int(key_len) <= 0:
-                raise(ValueError("Key len must be > 0 BECAUSE OTHERWISE IT MAKES NO SENSE!!!"))
+                raise(ValueError("Key len must be > 0"))
             if arg == '-l':
                 char_set = string.ascii_lowercase
                 keyGen()
